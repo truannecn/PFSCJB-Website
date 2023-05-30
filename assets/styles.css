@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* LANDING PAGE */
+
+.landingSections {
+    display: flex;
+    flex-direction: row;
+}
+
+.landingNavbar {
+    width: 50%;
+    background-color: #E7ECEF;
+}
+
+.landingImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 50%
+}
+
+#pfsc_image {
+    width: auto;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    border: 40px solid black;
+    
+}
