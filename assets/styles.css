@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --bluegrey:#E7ECEF;
+}
+
+.headerFont {
+    font-family: 'Lexend', sans-serif;
+}
+
+li.headerFont {
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* LANDING PAGE */
@@ -12,22 +31,47 @@
 
 .landingNavbar {
     width: 50%;
-    background-color: #E7ECEF;
+    height: 100vh;
+    background-color: var(--bluegrey);
 }
 
-.landingImage {
+.landingImageSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 800px;
-    width: 50%
+    height: 100vh;
+    width: 50vw;
 }
 
 #pfsc_image {
-    width: auto;
-    height: 70%;
     object-fit: cover;
     object-position: center;
     border: 40px solid black;
-    
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.subPages {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.navSection.active .subPages{
+    max-height: 300px;
+    animation: fade 0.5s;
+}
+
+.mainPage {
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    } to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
