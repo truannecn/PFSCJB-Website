@@ -27,6 +27,26 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* GENERALITIES */
+
+.genPageSetup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+.genTitle {
+    font-size: 65px;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+    border-bottom: solid black 1px;
+    padding: 0px 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
 /* LANDING PAGE */
 
 .landingSections {
@@ -153,6 +173,11 @@ p {
     cursor: pointer;
 }
 
+.nav_links a{
+    text-decoration: none;
+    color: black;
+}
+
 .nav_links li:hover {
     text-decoration: underline;
 }
@@ -219,20 +244,9 @@ p {
 
 /* WHAT IS JB PAGE */
 
-.whatTitle {
-    font-size: 65px;
-    margin-top: 2em;
-    margin-bottom: 0.7em;
-    border-bottom: solid black 1px;
-    padding: 0px 40px;
-    padding-bottom: 40px;
-}
-
-.whatPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 200px;
+.buttonGroup1 a {
+    text-decoration: none;
+    color: black;
 }
 
 .buttonGroup1 {
@@ -253,3 +267,11 @@ p {
     font-size: 17px;
     text-align: center;
 }
+
+/* GET INVOLVED PAGE */
+
+.involvedParagraph {
+    font-size: 17px;
+    text-align: center;
+}
+
