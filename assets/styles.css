@@ -96,6 +96,16 @@ p {
     animation: fade 0.5s;
 }
 
+.eventsTitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contactUsTitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .mainPage {
     cursor: pointer;
 }
@@ -110,7 +120,7 @@ p {
     }
 }
 
-/* WHAT IS JB PAGE */
+/* GENERAL NAV BAR */
 
 .navbar {
     display: flex;
@@ -121,15 +131,125 @@ p {
     background-color: var(--bluegrey);
 }
 
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logoText {
+    border-left: solid black 1px;
+    padding: 6px 0px;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
 .nav_links li{
     list-style: none;
     display: inline-block;
     padding: 10px 10px;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_links li:hover {
+    text-decoration: underline;
 }
 
 #logo {
-    width: 65px;
-    height: auto;
+    width: auto;
+    height: 70px;
 
+}
+
+/* TOGGLE BUTTON */
+
+.toggle_button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 2rem;
+    right: 1.8rem;
+    width: 35px;
+    height: 35px;
+}
+
+.toggle_bar {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 20%;
+}
+
+@media screen and (max-width: 800px){
+    .toggle_button {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .nav_links a {
+        width: 100%;
+    }
+
+    .nav_links.active{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #logoText {
+        display: none;
+    }
+}
+
+
+/* WHAT IS JB PAGE */
+
+.whatTitle {
+    font-size: 65px;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+    border-bottom: solid black 1px;
+    padding: 0px 40px;
+    padding-bottom: 40px;
+}
+
+.whatPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+.buttonGroup1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonGroup1 button {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 40px;
+    margin: 30px 60px;
+    font-size: 17px;
+}
+
+.JBDescript {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 17px;
+    text-align: center;
 }
