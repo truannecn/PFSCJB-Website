@@ -178,7 +178,7 @@ p {
     color: black;
 }
 
-.nav_links li:hover {
+.nav_links li a:hover {
     text-decoration: underline;
 }
 
@@ -186,6 +186,32 @@ p {
     width: auto;
     height: 70px;
 
+}
+
+#link_about {
+    position: relative;
+}
+
+.about_subPages {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    left: -20px;
+    background: var(--bluegrey);
+    z-index: 2;
+}
+
+.about_subPages.active {
+    display: block;
+}
+
+.about_subLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    list-style: none;
 }
 
 /* TOGGLE BUTTON */
@@ -202,7 +228,7 @@ p {
 }
 
 .toggle_bar {
-    background-color: white;
+    background-color: black;
     border-radius: 20px;
     width: 100%;
     height: 20%;
@@ -233,6 +259,9 @@ p {
         display: flex;
     }
 
+    .about_subPages {
+        top: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -275,3 +304,55 @@ p {
     text-align: center;
 }
 
+/* MEMBERS PROFILE PAGE */
+
+.memberColumns {
+    display: flex;
+    flex-direction: column;
+}
+
+.memberRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.memberRowColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.membersTitle {
+    font-size: 65px;
+    margin-top: 1.7em;
+    margin-bottom: 0.7em;
+    border-bottom: solid black 1px;
+    padding: 10px 5px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .memberRowColumn img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .memberRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .memberRowColumn img {
+        width: 200px;
+        height: auto;
+    }
+
+    .memberRowColumn {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+}
