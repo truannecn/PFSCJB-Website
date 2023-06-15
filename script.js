@@ -12,8 +12,7 @@ let navBarLinks = document.getElementsByClassName("nav_links")[0];
 
 toggleButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active');
-    volunteerButton.classList.togle('volunteer');
-});
+})
 
 let aboutUs = document.getElementById("link_about");
 let link = aboutUs.children[0];

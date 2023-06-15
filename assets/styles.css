@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@800;600;200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
@@ -16,7 +16,7 @@
 }
 
 h2.headerFont {
-    font-size: 35px;
+    font-size: 47px;
 }
 
 li.headerFont {
@@ -70,7 +70,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    height: 400px;
 }
 
 .landingImageSection {
