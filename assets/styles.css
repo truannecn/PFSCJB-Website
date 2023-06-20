@@ -356,3 +356,62 @@ p {
         padding: 50px 0;
     }
 }
+
+/* CONTACT US FOOTER SECTION */
+
+footer {
+    background-color: #274C77;
+    color: white;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.footerTitle {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: solid white 2px;
+    margin: 40px 6em;
+}
+
+.footerBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+}
+
+.logos {
+    margin-right: 20px;
+}
+
+.logos img{
+    height: 25px;
+    width: auto;
+}
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#phoneNumber {
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#facebook {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
