@@ -46,6 +46,25 @@ p {
     text-align: center;
 }
 
+.overlay {
+    display: none;
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .8;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.eventBox:hover {
+    text-decoration: underline;
+}
 
 /* LANDING PAGE */
 
@@ -225,6 +244,7 @@ p {
     right: 1.8rem;
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .toggle_bar {
@@ -357,12 +377,92 @@ p {
     }
 }
 
+/* EVENTS PAGE */
+
+.upcomingEvents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.eventBox {
+    background-color: gray;
+    padding: 40px 30px;
+    margin: 30px 50px;
+}
+
+.popup {
+    display: none;
+}
+
+.popup.show {
+    display: block;
+    position: absolute;
+    z-index: 901;
+    top: 30vh;
+    left: 30vw;
+    width: 50vw;
+    height: 50vh;
+    background: #90A1AE;
+    opacity: 1;
+}
+
+/* CONTACT US PAGE */
+
+.contactPage {
+    height: 100vh;
+    background-color: #274C77;
+    color: white;
+}
+
+.topSection {
+    padding: 100px 100px;
+    text-align: center;
+    border-bottom: white solid 1px;
+    margin: 0 200px;
+}
+
+.contactTitle {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.topSection p {
+    font-size: 15px;
+}
+
+.bottomSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contactUs__logos img {
+    height: 40px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.pin {
+    margin-bottom: 30px;
+}
+
+.contactUs__logos {
+    padding-right: 30px;
+}
+
+.address {
+    margin-bottom: 10px;
+}
+
 /* CONTACT US FOOTER SECTION */
 
 footer {
     background-color: #274C77;
     color: white;
-    height: 250px;
+    height: 300px;
     margin-top: 50px;
 }
 

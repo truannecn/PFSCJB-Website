@@ -20,3 +20,32 @@ let subPages = aboutUs.children[1];
 link.addEventListener("click", () => {
     subPages.classList.toggle("active");
 });
+
+// JAVASCRIPT FOR POP-UP SECTION
+
+let eventBoxes = document.querySelectorAll(".eventBox");
+console.log(eventBoxes)
+let overlay = document.getElementsByClassName("overlay")[0];
+console.log(overlay)
+let closeButtons = document.querySelectorAll(".closeButton");
+
+eventBoxes.forEach((eventBox) => {
+    eventBox.addEventListener("click", () => {
+        overlay.classList.toggle('active');
+        let popupNum = getElementIndex(eventBox);
+        let popup = document.querySelectorAll(".popup")[popupNum];
+        popup.classList.toggle('show');
+    })
+})
+
+closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener("click", () => {
+        overlay.classList.toggle('active');
+        let popup = closeButton.parentElement;
+        popup.classList.toggle('show');
+    })
+})
+
+function getElementIndex(element) {
+    return Array.from(element.parentNode.children).indexOf(element);
+}
