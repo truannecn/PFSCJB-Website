@@ -34,6 +34,10 @@ eventBoxes.forEach((eventBox) => {
         overlay.classList.toggle('active');
         let popupNum = getElementIndex(eventBox);
         let popup = document.querySelectorAll(".popup")[popupNum];
+        if (eventBox.parentNode.classList.contains('pastEvents')) {
+            popup = document.querySelectorAll(".popup2")[popupNum];
+        }
+        console.log(popup);
         popup.classList.toggle('show');
     })
 })

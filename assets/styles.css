@@ -360,7 +360,7 @@ p {
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 570px) {
     .memberRow {
         display: flex;
         flex-direction: column;
@@ -383,29 +383,121 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pastEvents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* .popupImgContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+} */
+
+.popupImages {
+    margin: 0 18vw;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
 }
 
 .eventBox {
-    background-color: gray;
-    padding: 40px 30px;
+    background-color: lightgray;
+    padding: 80px 40px;
     margin: 30px 50px;
+    cursor: pointer;
 }
 
-.popup {
+.popup, .popup2 {
     display: none;
 }
 
-.popup.show {
+.popup.show, .popup2.show {
     display: block;
     position: absolute;
     z-index: 901;
-    top: 30vh;
-    left: 30vw;
-    width: 50vw;
-    height: 50vh;
+    top: 15vh;
+    left: 15vw;
+    width: 70vw;
+    height: 110vh;
     background: #90A1AE;
     opacity: 1;
 }
+.uevents_title, .pevents_title {
+    border-bottom: solid black 1px;
+    margin: 40px 50px;
+    margin-right: 3em;
+    padding-bottom: 20px;
+}
+
+.eventBox h1 {
+    font-family: 'Lexend', sans-serif;
+}
+
+.popup h1 {
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.eventType {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 1em;
+    color: rgb(68, 76, 87);
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    text-decoration: underline;
+}
+
+.popupHr {
+    width: 10%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.eventInfo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.eventDescript {
+    margin: 0 15vw;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+/* @media screen and (max-width: 450px) {
+    .eventDescript {
+        margin: 0 20px;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: px) {
+    .eventDescript {
+        margin: 0 100px;
+        margin-top: 30px;
+        text-align: center;
+    }
+} */
 
 /* CONTACT US PAGE */
 
@@ -415,11 +507,17 @@ p {
     color: white;
 }
 
+
+.contactHR {
+    width: 50%;
+    margin: auto;
+}
+
 .topSection {
-    padding: 100px 100px;
+    padding: 80px 100px;
     text-align: center;
-    border-bottom: white solid 1px;
-    margin: 0 200px;
+    /* border-bottom: white solid 1px; */
+    /* margin: 0 200px; */
 }
 
 .contactTitle {
@@ -456,6 +554,23 @@ p {
 .address {
     margin-bottom: 10px;
 }
+
+.email {
+    margin-bottom: 22px;
+}
+
+.phoneNumber {
+    margin-bottom: 22px;
+}
+
+.igHandle {
+    margin-bottom: 22px;
+}
+
+.fbHandle {
+    margin-bottom: 22px;
+}
+
 
 /* CONTACT US FOOTER SECTION */
 
