@@ -68,6 +68,11 @@ p {
 
 /* LANDING PAGE */
 
+.landingtitles {
+    text-decoration: none;
+    color: black;
+}
+
 .landingSections {
     display: flex;
     flex-direction: row;
